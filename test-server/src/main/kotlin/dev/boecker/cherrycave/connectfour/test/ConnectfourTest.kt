@@ -41,7 +41,7 @@ class ConnectfourTest {
             val player: Player = event!!.player
             event.spawningInstance = instanceContainer
             player.respawnPoint = Pos(0.0, 0.0, 0.0)
-            player.gameMode = GameMode.SURVIVAL
+            player.gameMode = GameMode.CREATIVE
         }
 
         globalEventHandler.addListener(

@@ -69,7 +69,7 @@ class GameOverState(
         val winFrameItem = ItemStack.of(Material.GREEN_STAINED_GLASS_PANE)
             .with(DataComponents.CUSTOM_NAME, Component.text("Winner", NamedTextColor.GREEN))
         val loseFrameItem = ItemStack.of(Material.RED_STAINED_GLASS_PANE)
-            .with(DataComponents.CUSTOM_NAME, Component.text("Loser", NamedTextColor.GREEN))
+            .with(DataComponents.CUSTOM_NAME, Component.text("Loser", NamedTextColor.RED))
 
         for (i in 0 until InventoryType.CHEST_6_ROW.size step 9) {
             if (i / 9 != 2 && i / 9 != 3) {

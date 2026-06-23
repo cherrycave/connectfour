@@ -27,9 +27,11 @@ class ConnectFourGame(val manager: ConnectFourManager, val redPlayer: Player, va
 
     val players = listOf(redPlayer, bluePlayer)
 
-    internal fun startGame(items: ConnectFourItemSelection) {
+    init {
         MinecraftServer.getGlobalEventHandler().addChild(eventNode)
+    }
 
+    internal fun startGame(items: ConnectFourItemSelection) {
         gameState = IngameState(this, items)
     }
 
